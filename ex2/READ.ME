@@ -1,0 +1,94 @@
+Aluna: Marcela Ribeiro de Oliveira
+GRR20157372
+
+1) Execução:
+Para rodar:
+python ex2.py -i INPUT -n NAMES -m METHOD
+
+Onde:
+INPUT = imagem de entrada, que se quer encontrar a semelhante.
+NAMES = arquivo com o nome de todas as imagens as quais os histogramas serão
+comparados (pode conter o nome da imagem em input também).
+METHOD = método de comparaçãoo a ser usado, podendo ser: BHATTACHARYYA, CORREL,
+CHISQR, INTERSECT
+
+Por exemplo:
+python ex2.py -i trooper1.png -n images.in -m BHATTACHARYYA
+
+2) Resultados
+Abaixo pode-se conferir para cada método de comparação, e em cada um deles para
+cada imagem, qual foi a imagem encontrada como mais semelhante comparando seu
+histograma com o de todas as outras.
+No fim é mostrada a taxa de acerto.
+
+2.1) Correlation
+hulk1.png -> iron2.png
+hulk2.png -> volve2.png
+iron1.png -> magneto1.png
+iron2.png -> hulk1.png
+k3po1.png -> k3po2.png
+k3po2.png -> k3po1.png
+magneto1.png -> magneto2.png
+magneto2.png -> magneto1.png
+trooper1.png -> trooper2.png
+trooper2.png -> hulk2.png
+vader1.png -> vader2.png
+vader2.png -> magneto1.png
+volve1.png -> volve2.png
+volve2.png -> volve1.png
+Acertos: 8/14
+Taxa de acerto: 57.14%
+
+2.2) Chi-Square
+hulk1.png -> k3po1.png
+hulk2.png -> trooper1.png
+iron1.png -> k3po2.png
+iron2.png -> volve2.png
+k3po1.png -> k3po2.png
+k3po2.png -> k3po1.png
+magneto1.png -> magneto2.png
+magneto2.png -> magneto1.png
+trooper1.png -> k3po2.png
+trooper2.png -> trooper1.png
+vader1.png -> vader2.png
+vader2.png -> vader1.png
+volve1.png -> volve2.png
+volve2.png -> volve1.png
+Acertos: 9/14
+Taxa de acerto: 64.28%
+
+2.3) Intersection
+hulk1.png -> iron2.png
+hulk2.png -> iron2.png
+iron1.png -> magneto1.png
+iron2.png -> magneto1.png
+k3po1.png -> iron2.png
+k3po2.png -> magneto1.png
+magneto1.png -> magneto2.png
+magneto2.png -> magneto1.png
+trooper1.png -> trooper2.png
+trooper2.png -> iron2.png
+vader1.png -> vader2.png
+vader2.png -> iron2.png
+volve1.png -> iron2.png
+volve2.png -> iron2.png
+Acertos: 4/14
+Taxa de acerto: 28.57%
+
+2.4) Bhattacharyya distance
+hulk1.png -> hulk2.png
+hulk2.png -> volve2.png
+iron1.png -> iron2.png
+iron2.png -> volve2.png
+k3po1.png -> k3po2.png
+k3po2.png -> k3po1.png
+magneto1.png -> magneto2.png
+magneto2.png -> magneto1.png
+trooper1.png -> trooper2.png
+trooper2.png -> trooper1.png
+vader1.png -> vader2.png
+vader2.png -> iron1.png
+volve1.png -> volve2.png
+volve2.png -> volve1.png
+Acertos: 11/14
+Taxa de acerto: 78.57%

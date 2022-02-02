@@ -1,0 +1,19 @@
+Marcela Ribeiro de Oliveira
+GRR20157372
+
+Execução
+
+$ python texture.py -d <diretorio> -ta <arquivo saida treino> -te <arquivo saida teste> -m <[1, 2, 3]> -r <raio>
+
+Onde:
+<diretorio> : diretório que contém as imagens as imagens.
+<arquivo de saida treino> : arquivo onde será escrito o vetor de características de cada imagem de treino.
+<arquivo de saida teste> : arquivo onde será escrito o vetor de características de cada imagem de teste.
+<[1, 2, 3]>: Identificador da característica que se deseja extrair. Sendo:
+1 - lbp simples sem zoneamento
+2 - lbp da imagem dividida em 4 zonas
+3 - lbp da imagem dividida em 8 zonas
+<raio> : raio de vizinhança do lbp.
+
+Exemplo de execução:
+$	python texture.py -d Carvao/ -ta treino.out -te teste.out -m 3 -r 4

@@ -1,0 +1,15 @@
+Implementar o kNN como discutido em sala de aula.
+
+    Qualquer linguagem de programação pode ser utilizada.
+    O programa deve ser executado em linha de comando com os seguintes parâmetros:
+
+knn <base de treinamento> <base de teste> <valor de k>
+
+    O programa deve fornecer como saída as taxas de reconhecimento, erro e rejeição e a matriz de confusão.
+    Para testar o algoritmo, as seguintes bases de dados podem ser utilizadas: http://www.inf.ufpr.br/lesoliveira/padroes/150k.zip
+
+O que deve ser entregue :
+
+- Código fonte
+
+- Relatório contendo tempo de execução, taxas de reconhecimento, erro e rejeição, e matriz de confusão nas bases de testes CCtest1 e CCtest2.

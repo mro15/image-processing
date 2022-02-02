@@ -1,0 +1,19 @@
+O arquivo compactado da base de dados contem o diretório data (com 2000 imagens) e o arquivo files.txt o qual contem o label de cada imagem no formato abaixo:
+
+data/cdf0361_07_13_0.tif 0
+
+Ou seja, a imagem cdf0361_07_13_0.tif tem o label 0 (zero).
+
+O arquivo label.txt está ordenado por classes. Nas primeiras duzentas linhas estão as imagens do digitos 0, nas duzentas seguinte as imagens do digito 1 e assim por diante.
+
+Para o treinamento, você devera utilizar as 100 primeiras imagens de cada classe
+
+    classe 0 - [1:100]
+    classe 1 - [201:300]
+    classe 2 - [401:500]
+    .
+    .
+    .
+    classe  9 - [1801:1900]
+
+O restante das imagens deverão (100 ultimas de cada classe) serão utilizadas para o teste.

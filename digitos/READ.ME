@@ -1,0 +1,23 @@
+Marcela Ribeiro de Oliveira
+GRR20157372
+
+Execução
+
+$ python extractor.py -f <imagens rotuladas> - <arquivo de saida> -m <[1...7]>
+
+Onde:
+<imagens rotuladas> : arquivo com o caminho para as imagens, contendo uma imagem
+por linha e a classe dessa imagem.
+<arquivo de saida> : arquivo onde será escrito o vetor de características de
+cada imagem.
+<[1...7]>: Identificador da característica que se deseja extrair. Sendo:
+1 - histograma do contorno - 4 zonas
+2 - histograma do contorno - 8 zonas
+3 - histograma do contorno - 16 zonas
+4 - histograma do contorno - 4 zonas(com resize das imagens)
+5 - histograma do contorno - 8 zonas(com resize das imagens)
+6 - histograma do contorno - 16 zonas(com resize das imagens)
+7 - perfil horizontal do histograma
+
+Exemplo de execução:
+$ python extractor.py -f files.txt -o saida.out -m 6

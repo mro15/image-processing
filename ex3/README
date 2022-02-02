@@ -1,0 +1,12 @@
+1. Implemente os filtros da média e mediana. A configuração do filtro deve ser
+lido de um aquivo texto, ou linha de comando. Por exemplo, um filtro 3x3 deve
+ser escrito assim [1 1 1, 1 1 1, 1 1 1].
+2. Aplique diferentes tamanhos do filtro gaussiano que você implementou a uma
+imagem de grandes dimensões (ex. 4000X3000) e compare os resultados (imagem
+resultante e tempo de processamento) com o filtro GaussianBlur da bilbioteca
+OpenCV. Relate a suas conclusões.
+3. Analise diferentes tamanhos do filtro da mediana em diferentes níveis de
+ruído. Verifique o impacto na imagem resultante. Compare o desempenho e
+resultados do filtro da Mediana implementado por você e implementado na
+biblioteca OpenCV.
+
