@@ -1,1 +1,1 @@
-Compilado de trabalhos da optativa de processamento de imagens
+Image processing class assigments.
